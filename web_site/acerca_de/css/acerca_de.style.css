@@ -348,6 +348,36 @@ header {
 .back-img {
   order: 1;
 }
+
+@media (max-width: 768px) {
+  .backpack,
+  .back {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .backpack-img,
+  .backpack-content,
+  .back-content,
+  .back-img {
+    order: unset; /* Si estabas usando order, lo desactivas para móviles */
+  }
+
+  .backpack-img,
+  .backpack-content,
+  .back-content {
+    padding: 20px;
+  }
+
+  .backpack-img,
+  .back img,
+  .backpack img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 /* Nuestros valores */
 .team-content {
   display: grid;
