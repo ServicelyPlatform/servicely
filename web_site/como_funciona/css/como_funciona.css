@@ -30,7 +30,7 @@ section {
   padding: 4.5rem 0 3rem;
 }
 .container {
-  max-width: 1068px;
+  max-width: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,6 +57,7 @@ header {
   font-weight: 700;
   color: var(--text-color);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .logo .bx {
   font-size: 24px;
@@ -91,6 +92,7 @@ header {
 }
 .btn:hover {
   background: #3492fd;
+  color: var(--bg-color);
 }
 /* Home */
 .home {
@@ -419,6 +421,10 @@ pf {
 @media (max-width: 768px) {
   .nav {
     padding: 10px 0;
+    max-height: 20%;
+    position:top absolute;
+    width: 100%;
+    height: 20%;
   }
   #menu-icon {
     display: initial;
@@ -487,5 +493,21 @@ pf {
   }
   .footer {
     border-radius: 3rem 0 0 0;
+  }
+}
+
+.form-control {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .form-control {
+    padding: 10px;
+    font-size: 14px;
   }
 }

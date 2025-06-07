@@ -514,14 +514,6 @@ header {
   #menu:checked ~ .navbar {
     clip-path: circle(144% at 100% 1%);
   }
-  .about-text span {
-    font-size: 0.9rem;
-  }
-  .about-text h2,
-  .heading h2,
-  .newsletter h2 {
-    font-size: 1.4rem;
-  }
 }
 @media (max-width: 638px) {
   .about-text {
