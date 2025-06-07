@@ -117,6 +117,17 @@ header {
     -1px  1px 0 black,
      1px  1px 0 black; /* Borde negro */
 }
+.break-point {
+  white-space: normal; /* por defecto permite salto (en PC) */
+  display: block;      /* hace que 'la búsqueda' esté en línea aparte */
+}
+
+@media (max-width: 600px) {
+  .break-point {
+    white-space: nowrap; /* en móvil sin salto, todo en la misma línea */
+    display: inline;     /* para que esté en línea */
+  }
+}
 .about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
@@ -206,6 +217,7 @@ header {
   transform: translateY(-10px);
   transition: 0.5s;
 }
+
 .service-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80.5px, 95.1px));
@@ -217,6 +229,22 @@ header {
   color: var(--container-color);
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .service-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .ser-box {
+    width: 45%;
+    max-width: 120px;
+    text-align: center;
+  }
+}
+
 .properties-container .box img {
   border-radius: 1rem;
   height: 220px;
