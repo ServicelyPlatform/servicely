@@ -8,8 +8,8 @@
     <!-- LInk To CSS -->
     <link rel="stylesheet" href="css/login-sign_up.style.css">
     <!-- Box Icons -->
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="js/boton_tp.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -19,7 +19,7 @@
             <a href="../inicio/inicio.html" class="logo"><i class='bx bx-run bx-tada' style='color:#3492fd' ></i>Servicely</a>
            
             <!-- Log In Button -->
-            <a href="login_cliente.html" class="btn">Iniciar sesión</a>
+            <a href="../inicio/inicio.html" class="btn">Volver al inicio </a>
         </div>
 
     </header>
@@ -27,25 +27,30 @@
     <div class="login container">
         <div class="login-container">
             <h2>Bienvenido , vamos a iniciar</h2>
-            <p>Listo para crear tu cuenta, <a href="login_cliente.html">empezemos</a></p>
+            <p>Listo para crear tu cuenta, <a href="login.html">empezemos</a></p>
             <!-- Login Form -->
             <form action="">
                 <span>Nombre completo</span>
-                <input type="text" name="" id="" placeholder="Nombre completo" required>
+                <input type="text" name="" id="" placeholder="Escribe tu nombre" required>
+                <span>Tipo de registro</span>
+                <div class="tipo-registro">
+                    <button id="btnCliente">Cliente</button>
+                    <button id="btnProveedor">Proveedor</button>
+                </div>
                 <span>Ingresa tu dirección email </span>
                 <input type="email" name="" id="" placeholder="yomail@gmail.com" required>
                 <span>Teléfono</span>
-                <input type="tel" name="" id="" placeholder="Ingresa tu número" required>
+                <input type="tel" name="" id="" placeholder="6565-6565" required>
                 <span>Ingresa tu contraseña </span>
-                <input type="password" name="" id="" placeholder="Ingresa tu contraseña" required>
+                <input type="password" name="" id="" placeholder="Escribe la contraseña" required>
                 <input type="submit" value="Registrarme" class="buttom">
-                <a href="login.html">Ya tienes una cuenta? </a>
+                <center><a>Si ya tienes una cuenta... </a></center>
             </form>
-            <a href="login_cliente.html" class="btn">Iniciar sesión</a>
+            <a href="login.html" class="btn">Inicia sesión</a>
         </div>
         <!-- Log In Image -->
         <div class="login-image">
-            <img src="images/sign-up.webp" alt="">
+            <img src="images/cliente_comp.png" alt="">
         </div>
     </div>
     
