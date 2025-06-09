@@ -29,6 +29,13 @@ body {
 section {
   padding: 4.5rem 0 3rem;
 }
+.imagen-registro {
+  display: flex;
+  max-width: 100%;
+  width:auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 .container {
   max-width: auto;
   margin-left: auto;
@@ -221,18 +228,28 @@ header {
 }
 /* ---FOOTER---*/
 .footer {
-  background: var(--main-color);
-  color: var(--bg-color);
-  border-radius: 5rem 0 0 0;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 5rem 0 0 0;
+    width: 100%;         /* o un valor como 1200px */
+    height: 243px;       /* o cualquier altura deseada */
 }
+
 .footer-container {
   display: grid;
+  justify-content: start; /* o center si prefieres centrar todo */
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-  gap: 2rem;
+  gap: 1rem;
+  padding-inline: 30px; /* ahora este valor tendrá efecto visible */
+  padding-left: 5%;
 }
 .footer-container h2 {
-  font-size: 1.7rem;
-  font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fbfbfb;
+    letter-spacing: 0.1px;
+    margin-left: -29.5px;  /* Muévelo hacia la derecha */
+    /* o usa margin-right: 2rem; para moverlo hacia la izquierda */
 }
 .footer-box {
   display: flex;
@@ -240,22 +257,20 @@ header {
 }
 .footer-box h3 {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
+  color:#fbfbfb
 }
 .footer-box a {
   font-size: 0.8rem;
   color: var(--bg-color);
   font-weight: 400;
-  margin-bottom: 0.5rem;
+  margin-bottom: 9px;
 }
 .footer-box a:hover {
   color: var(--text-color);
 }
-.social a {
-  font-size: 20px;
-  margin-right: 1rem;
-}
+
 .social a:hover {
   color: var(--second-color);
 }
@@ -358,6 +373,14 @@ header {
   gap: 1.5rem;
   margin-top: 2rem;
 }
+.form-control {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
 .customers-container .box {
   padding: 20px;
   box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
@@ -385,6 +408,14 @@ header {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    display: flex;
+  }
+
 }
 @media (max-width: 880px) {
   section {
@@ -481,14 +512,7 @@ header {
   }
 }
 
-.form-control {
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
+
 
 @media (max-width: 600px) {
   .form-control {

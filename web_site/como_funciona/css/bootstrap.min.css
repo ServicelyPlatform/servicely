@@ -122,15 +122,6 @@
     background-color: #f9f9f9;
 }
 
-.services-icon-wrap {
-    width: 64px;
-    height: 64px;
-    background-color: #0d6efd;
-    color: #fff;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    margin-top: 20px;
-}
 
 .services-price-text {
     font-weight: bold;
@@ -239,11 +230,7 @@
 .projects-thumb {
     flex: 0 0 calc(33.333% - 20px); /* 3 columnas con espacio */
 }
-@media (max-width: 768px) {
-    .projects-thumb {
-        flex: 0 0 100%;
-    }
-}
+
 .section-title-wrap {
   background-color: #0d6efd;
   padding: 1.5rem;

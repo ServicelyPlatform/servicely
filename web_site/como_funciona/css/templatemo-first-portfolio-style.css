@@ -268,8 +268,8 @@ strong {
 .hero {
   position: relative;
   overflow: hidden;
-  padding-top: 300px;
-  padding-bottom: 330px;
+  padding-top: 10%;
+  padding-bottom: 15%;
   width: auto;
   height: auto;
 }
@@ -501,7 +501,7 @@ strong {
   position: relative;
   overflow: hidden;
   margin-bottom: 24px;
-  padding: 40px 40px 240px 40px;
+  padding: 40px 40px 10% 40px;
   transition: all 0.5s;
 }
 
