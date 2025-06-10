@@ -293,7 +293,7 @@ header {
 .newsletter h2 {
   font-size: 1.7rem;
 }
-.newsletter form input {
+.newsletter form a {
   border: none;
   outline: none;
   font-size: 1rem;
@@ -420,7 +420,7 @@ header {
   border-radius: 0;
   text-align: center;
 }
-/*customer seccion*/
+/* customer sección */
 .customers {
   max-width: 968px;
   margin-left: auto;
@@ -431,33 +431,150 @@ header {
   font-size: 1.6rem;
   font-weight: 600;
 }
-.customers-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-  gap: 1.5rem;
+
+/* Carrusel dinámico */
+.customers-carousel-container {
+  position: relative;
+  overflow: hidden;
   margin-top: 2rem;
 }
-.customers-container .box {
+
+.customers-carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.customers-carousel .box {
+  max-width: 33%;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.carousel-controls button {
+  padding: 0.5rem 1rem;
+  background: #3492fd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Comentario individual */
+.customers-carousel .box {
   padding: 20px;
   box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
   border-radius: 0.5rem;
   border-bottom: 7px solid var(--green-color);
 }
-.customers-container .box:hover {
-  transform: translateY(10px);
-  transition: 0.2s all linear;
-}
-.customers-container .box .bx {
+
+.customers-carousel .box .bx {
   font-size: 24px;
   color: var(--green-color);
 }
-.customers-container .box .stars .bx {
+
+.customers-carousel .box .stars .bx {
   font-size: 1rem;
   color: var(--light-orange-color);
 }
-.customers-container .box p {
+
+.customers-carousel .box p {
   font-size: 0.938rem;
 }
+
+/* Botón Agregar Comentario */
+.add-comment-btn-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.add-comment-btn {
+  padding: 10px 20px;
+  background-color: #3492fd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close {
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.submit-comment-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #3492fd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mostrar 3 en pantallas grandes */
+@media (max-width: 580px) {
+  .customers-carousel .box {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .customers-carousel {
+    max-height: auto;
+  }
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
   .container {
