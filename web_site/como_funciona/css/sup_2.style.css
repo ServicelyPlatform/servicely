@@ -43,7 +43,6 @@
   z-index: 2;
 }
 
-
 .hero-image {
   position: absolute;
   top: 50%;
@@ -188,9 +187,8 @@
     border-radius: .5rem;
 }
 
-/*---------------------------------------
-  HERO - RESPONSIVE (MÓVIL)
------------------------------------------*/
+/* Responsivo */
+
 @media screen and (min-width: 991px) {
   .hero {
     height: auto;
