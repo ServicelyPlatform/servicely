@@ -114,6 +114,19 @@ header {
   align-items: center;
 }
 
+/*
+.home {
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+} */
+
+
 .home-text {
   padding: 0 1rem;
   width: 100%;
