@@ -55,7 +55,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 35px;
-  width: 100%;
+  width: 79%;
+  margin: 0 auto;
 }
 .logo {
   display: flex;
@@ -164,6 +165,7 @@ header {
 @media (max-width: 768px) {
   .nav {
     padding: 10px 0;
+    width: 90%;
   }
   #menu-icon {
     display: initial;

@@ -452,13 +452,14 @@ header {
   color: #8a8a8a;
   margin-bottom: 4px;
 }
-.login-container form input {
+.login-container form input{
   border: 1px solid #8a8a8a;
   outline: none;
   padding: 10px;
   margin-bottom: 1rem;
   background: var(--bg-color);
 }
+
 .login-container form .buttom {
   outline: none;
   border: none;
@@ -517,6 +518,7 @@ header {
 .customers-container .box p {
   font-size: 0.938rem;
 }
+
 /* Making Responsive */
 @media (max-width: 1080px) {
   .container {

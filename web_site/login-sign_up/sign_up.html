@@ -19,7 +19,7 @@
             <a href="../inicio/inicio.html" class="logo"><i class='bx bx-run bx-tada' style='color:#3492fd' ></i>Servicely</a>
            
             <!-- Log In Button -->
-            <a onclick="window.history.back()" class="btn"> Volver </a>
+            <a href="../inicio/inicio.html" class="btn"> Volver </a>
         </div>
 
     </header>
@@ -27,7 +27,7 @@
     <div class="login container">
         <div class="login-container">
             <h2>Bienvenido , vamos a iniciar</h2>
-            <p>Listo para crear tu cuenta, <a href="login.html">empezemos</a></p>
+            <p>Listo para crear tu cuenta, ¡empezemos!</p>
             <!-- Login Form -->
             <form action="">
                 <span>Nombre completo</span>
@@ -36,6 +36,30 @@
                 <div class="tipo-registro">
                     <button id="btnCliente">Cliente</button>
                     <button id="btnProveedor">Proveedor</button>
+                </div>
+                <!-- Pregunta cédula para Cliente -->
+                <div id="cedulaClienteContainer" style="display: none;">
+                    <span>Cédula</span>
+                    <input type="text" name="cedulaCliente" placeholder="Escribe tu cédula">
+                </div>
+
+                <!-- Pregunta tipo de proveedor -->
+                <span>Tipo de proveedor</span>
+                <div id="tipoProveedorContainer" class="tipo-registro" style="display: none;">
+                    <button id="btnIndependiente">Independiente</button>
+                    <button id="btnEmpresa">Empresa</button>
+                </div>
+
+                <!-- Pregunta cédula para Independiente -->
+                <div id="cedulaProveedorContainer" style="display: none;">
+                    <span>Cédula</span>
+                    <input type="text" name="cedulaProveedor" placeholder="Escribe tu cédula">
+                </div>
+
+                <!-- Pregunta RUC para Empresa -->
+                <div id="rucEmpresaContainer" style="display: none;">
+                    <span>RUC</span>
+                    <input type="text" name="rucEmpresa" placeholder="Número de RUC">
                 </div>
                 <input type="hidden" name="respuesta" id="respuesta">
                 <span>Ingresa tu dirección email </span>
@@ -51,7 +75,7 @@
         </div>
         <!-- Log In Image -->
         <div class="login-image">
-            <img src="images/cliente_comp.webp" alt="">
+            <img src="images/registro.webp" alt="">
         </div>
     </div>
     
@@ -77,7 +101,7 @@
                 <a href="mailto:servicelyplatform@outlook.com">servicelyplatform@outlook.com</a>
                 <div class="social">
                     <a href="https://www.facebook.com/share/1Ajgz7Mrfu/?mibextid=wwXIfr" target="_blank"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://x.com/servicely173596?s=11"><i class='bx bxl-twitter' ></i></a>
                     <a href="https://www.instagram.com/servicelypty?igsh=bXRyc3l5YTloeW80" target="_blank"><i class='bx bxl-instagram' ></i></a>
                 </div>
             </div>
@@ -88,8 +112,7 @@
         <p>&#169; Servicely Todos los Derechos Reservados </p>
     </div>
     
-    <script src="js/boton_tp.js"></script>
-    <script src="js/validación.js"></script>
+    <script src="js/dinamic_form.js"></script>
     <script src="js/setTipoDesdeURL.js"></script>
 </body>
 </html>

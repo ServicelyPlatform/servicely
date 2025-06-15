@@ -100,48 +100,49 @@ header {
   background: #3492fd;
 }
 
-/* Home */
 .home {
+  position: relative;
   margin-top: 5rem;
   margin-bottom: 2rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/duda.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 440px;
   border-radius: 1.5rem;
   display: flex;
   align-items: center;
-}
-
-/*
-.home {
-  position: relative;
   overflow: hidden;
-  transition: opacity 0.5s ease-in-out;
 }
 
-.fade {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-} */
+.background-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+  opacity: 1;
+}
 
+/* Gradiente encima */
+.home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
 
 .home-text {
-  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 2rem;
   width: 100%;
+  text-align: center;
 }
 
 .home-text h1 {
-  color: var(--bg-color);
   font-size: 2rem;
   margin-bottom: 1rem;
-  text-align: center;
-}
-
-.home-text p {
-  color: var(--bg-color);
-  text-align: center;
 }
 
 /* Properties */
